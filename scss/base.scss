@@ -1,3 +1,11 @@
+$primary-color: #D97F2D;
+$secondary-color: #f0d5bc;
+$tertiary-color: #333;
+$gray-color: #ccc;
+$white-color: #fff;
+$black-color: #000;
+$color-opaco: rgba(88, 31, 31, 0.5);
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +15,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
 
     hr {
         border-top: 3px solid #D97F2D;
@@ -15,7 +24,7 @@ body {
     }
 
     .cabecera {
-        background-color: #f0d5bc;
+        background-color: $secondary-color;
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -25,8 +34,8 @@ body {
 
         .carousel-item {
             height: 400px;
-            background-color: #f0d5bc;
-            color: #333;
+            background-color: $secondary-color;
+            color: $black-color;
             text-align: center;
 
             img {
@@ -42,11 +51,11 @@ body {
                 width: 10px;
                 height: 10px;
                 margin: 0 10px;
-                background-color: #ccc;
+                background-color: $gray-color;
                 transition: background-color 0.3s ease-in-out;
 
                 &.active {
-                    background-color: #333;
+                    background-color: $gray-color;
                 }
             }
         }
@@ -72,7 +81,7 @@ body {
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.8);
-                color: #fff;
+                color: $white-color;
 
                 .fa-chevron-left,
                 .fa-chevron-right {
@@ -123,6 +132,8 @@ body {
             .contenedorLogo img {
                 max-height: 60px;
 
+
+
                 .contenerdorElemHeader {
                     text-align: center;
                     padding: 20px 0;
@@ -130,6 +141,7 @@ body {
                     .tituloHeader {
                         font-size: 36px;
                         margin-bottom: 10px;
+
                     }
 
                     .imagenHeader {
@@ -141,6 +153,50 @@ body {
                     }
                 }
             }
+
+            .navegacion {
+                background-color: $primary-color;
+                margin-top: 1rem;
+                border-radius: 10px;
+
+                .nav-item {
+                    &+& {
+                        margin-left: 1rem;
+                    }
+
+                    .nav-link {
+                        color: $tertiary-color;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding: 0.5rem 1rem;
+
+                        &:hover {
+                            color: $white-color;
+                            background-color: $primary-color;
+                            transition: $primary-color 0.3s ease-in-out;
+                        }
+
+                        &.active {
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                .navbar-toggler {
+                    border-color: $primary-color;
+
+                    &:hover {
+                        background-color: $primary-color;
+                        border-color: $primary-color;
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 0 0.25rem rgba(255, 75, 43, 0.5);
+                    }
+                }
+            }
+
+
 
         }
 
@@ -177,7 +233,7 @@ body {
         margin: auto;
         margin-bottom: 5%;
         padding: 20px;
-        background-color: #fff;
+        background-color: $white-color;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
         h1 {
@@ -189,19 +245,19 @@ body {
 
         .location {
             margin-bottom: 50px;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid $black-color;
             padding-bottom: 30px;
 
 
             h2 {
                 font-size: 1.8rem;
-                color: #333;
+                color: $black-color;
                 margin-bottom: 10px;
             }
 
             p {
                 font-size: 1.2rem;
-                color: #666;
+                color: $black-color;
                 margin-bottom: 5px;
             }
         }
@@ -211,7 +267,7 @@ body {
         }
 
         .location:hover {
-            transform: scale(1.05);
+            transform: scale(1.15);
         }
 
         .logo {
@@ -229,6 +285,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 40px;
 
             .title {
                 font-size: 3rem;
@@ -261,7 +318,7 @@ body {
             justify-content: center;
 
             .apicar_initContainer {
-                background-color: #fff;
+                background-color: $white-color;
                 border-radius: 10px;
                 padding: 30px;
 
@@ -286,18 +343,18 @@ body {
                     width: 100%;
                     padding: 10px;
                     border-radius: 5px;
-                    border: 1px solid #ccc;
+                    border: 1px solid $gray-color;
                 }
 
                 .apli__formField input:focus,
                 .apli__formField select:focus {
                     outline: none;
-                    border-color: #D97F2D;
+                    border-color: $primary-color;
                 }
 
                 .apli__formField input[type="submit"] {
-                    background-color: #D97F2D;
-                    color: #fff;
+                    background-color: $primary-color;
+                    color: $white-color;
                     border: none;
                     padding: 10px 20px;
                     border-radius: 5px;
@@ -309,7 +366,7 @@ body {
             .apli_successContainer {
                 display: none;
                 text-align: center;
-                background-color: #fff;
+                background-color: $white-color;
                 border-radius: 10px;
                 padding: 30px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -378,7 +435,7 @@ body {
                     .precio {
                         font-weight: bold;
                         font-size: 1.2rem;
-                        color: #333;
+                        color: $black-color;
                         margin-top: 0.5rem;
                     }
                 }
@@ -434,7 +491,7 @@ body {
                 padding: 10px;
                 margin: 0;
                 background-color: #D97F2D;
-                color: #fff;
+                color: $white-color;
                 font-size: 1.2rem;
                 text-align: center;
                 transform: translateY(100%);
@@ -448,7 +505,7 @@ body {
         margin-top: 50px;
         text-align: center;
         background-color: #2d2d2d;
-        color: #FFF;
+        color: $white-color;
         padding: 2rem;
     }
 
@@ -474,7 +531,7 @@ body {
     }
 
     .piePagina {
-        background-color: #f0d5bc;
+        background-color: $secondary-color;
         padding: 10px;
         text-align: center;
 
@@ -485,7 +542,7 @@ body {
             margin: 10px;
 
             .fa-brands {
-                color: #000;
+                color: $black-color;
             }
 
             .fa-instagram:hover {

@@ -24,7 +24,7 @@ body .cabecera {
 body .cabecera .carousel-item {
   height: 400px;
   background-color: #f0d5bc;
-  color: #333;
+  color: #000;
   text-align: center;
 }
 body .cabecera .carousel-item img {
@@ -41,7 +41,7 @@ body .cabecera .carousel-indicators li {
   transition: background-color 0.3s ease-in-out;
 }
 body .cabecera .carousel-indicators li.active {
-  background-color: #333;
+  background-color: #ccc;
 }
 body .cabecera .carousel-control-prev,
 body .cabecera .carousel-control-next {
@@ -121,6 +121,38 @@ body .cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader .im
   max-width: 100%;
   height: auto;
 }
+body .cabecera .contenedorElemNav .navegacion {
+  background-color: #D97F2D;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+body .cabecera .contenedorElemNav .navegacion .nav-item + body .cabecera .contenedorElemNav .navegacion .nav-item {
+  margin-left: 1rem;
+}
+body .cabecera .contenedorElemNav .navegacion .nav-item .nav-link {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+body .cabecera .contenedorElemNav .navegacion .nav-item .nav-link:hover {
+  color: #fff;
+  background-color: #D97F2D;
+  transition: #D97F2D 0.3s ease-in-out;
+}
+body .cabecera .contenedorElemNav .navegacion .nav-item .nav-link.active {
+  color: #D97F2D;
+}
+body .cabecera .contenedorElemNav .navegacion .navbar-toggler {
+  border-color: #D97F2D;
+}
+body .cabecera .contenedorElemNav .navegacion .navbar-toggler:hover {
+  background-color: #D97F2D;
+  border-color: #D97F2D;
+}
+body .cabecera .contenedorElemNav .navegacion .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 75, 43, 0.5);
+}
 body .cabecera .welcome__quote {
   font-style: italic;
   font-size: 18px;
@@ -158,24 +190,24 @@ body main h1 {
 }
 body main .location {
   margin-bottom: 50px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000;
   padding-bottom: 30px;
 }
 body main .location h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: #000;
   margin-bottom: 10px;
 }
 body main .location p {
   font-size: 1.2rem;
-  color: #666;
+  color: #000;
   margin-bottom: 5px;
 }
 body main .location {
   transition: transform 0.2s ease-in-out;
 }
 body main .location:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 body main .logo {
   transition: opacity 0.3s ease-in-out;
@@ -189,6 +221,7 @@ body main .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 body main .container .title {
   font-size: 3rem;
@@ -308,7 +341,7 @@ body .seccionMenu .listaMenu li .menu h3 {
 body .seccionMenu .listaMenu li .menu .precio {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #333;
+  color: #000;
   margin-top: 0.5rem;
 }
 body .seccionCards {
@@ -361,7 +394,7 @@ body .seccionVideo {
   margin-top: 50px;
   text-align: center;
   background-color: #2d2d2d;
-  color: #FFF;
+  color: #fff;
   padding: 2rem;
 }
 body .seccionVideo h2 {
