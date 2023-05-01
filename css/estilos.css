@@ -8,12 +8,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 body hr {
-  border-top: 3px solid #ccc;
+  border-top: 3px solid #D97F2D;
   margin: 30px auto;
   max-width: 800px;
 }
 body .cabecera {
-  background-color: #EFEFEF;
+  background-color: #f0d5bc;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -23,12 +23,12 @@ body .cabecera {
 }
 body .cabecera .carousel-item {
   height: 400px;
-  background-color: #eee;
+  background-color: #f0d5bc;
   color: #333;
   text-align: center;
 }
 body .cabecera .carousel-item img {
-  max-width: 1000%;
+  max-width: 100%;
   max-height: 100%;
 }
 body .cabecera .carousel-indicators li {
@@ -37,8 +37,64 @@ body .cabecera .carousel-indicators li {
   width: 10px;
   height: 10px;
   margin: 0 10px;
-  background-color: #0a0a0a;
+  background-color: #ccc;
   transition: background-color 0.3s ease-in-out;
+}
+body .cabecera .carousel-indicators li.active {
+  background-color: #333;
+}
+body .cabecera .carousel-control-prev,
+body .cabecera .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: #333;
+  text-shadow: none;
+  background-color: rgba(226, 12, 12, 0.5);
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+body .cabecera .carousel-control-prev:hover,
+body .cabecera .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+body .cabecera .carousel-control-prev:hover .fa-chevron-left,
+body .cabecera .carousel-control-prev:hover .fa-chevron-right,
+body .cabecera .carousel-control-next:hover .fa-chevron-left,
+body .cabecera .carousel-control-next:hover .fa-chevron-right {
+  animation: bounce 0.5s ease;
+}
+body .cabecera .carousel-control-prev {
+  left: 20px;
+}
+body .cabecera .carousel-control-next {
+  right: 20px;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 body .cabecera .contenedorElemNav {
   display: flex;
@@ -162,8 +218,6 @@ body main .aplicar .apicar_initContainer {
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  width: 50%;
 }
 body main .aplicar .apicar_initContainer .apli__content {
   text-align: center;
@@ -187,10 +241,10 @@ body main .aplicar .apicar_initContainer .apli__formField input {
 body main .aplicar .apicar_initContainer .apli__formField input:focus,
 body main .aplicar .apicar_initContainer .apli__formField select:focus {
   outline: none;
-  border-color: #3366cc;
+  border-color: #D97F2D;
 }
 body main .aplicar .apicar_initContainer .apli__formField input[type=submit] {
-  background-color: #3366cc;
+  background-color: #D97F2D;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -212,6 +266,50 @@ body main .aplicar .apli_successContainer .apli_titulo {
 }
 body main .aplicar .apli_successContainer .apli__contenido {
   margin-bottom: 30px;
+}
+body .seccionMenu {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+body .seccionMenu h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+body .seccionMenu .listaMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .seccionMenu .listaMenu li {
+  margin: 20px;
+}
+body .seccionMenu .listaMenu li .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+}
+body .seccionMenu .listaMenu li .menu img {
+  width: 200px;
+  height: 200px;
+}
+body .seccionMenu .listaMenu li .menu h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+body .seccionMenu .listaMenu li .menu .precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 0.5rem;
 }
 body .seccionCards {
   display: flex;
@@ -252,7 +350,7 @@ body .seccionCards .card h3 {
   width: 100%;
   padding: 10px;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #D97F2D;
   color: #fff;
   font-size: 1.2rem;
   text-align: center;
@@ -284,7 +382,7 @@ body .seccionVideo video {
   }
 }
 body .piePagina {
-  background-color: #EFEFEF;
+  background-color: #f0d5bc;
   padding: 10px;
   text-align: center;
 }
