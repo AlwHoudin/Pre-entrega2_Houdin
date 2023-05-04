@@ -12,7 +12,8 @@ body hr {
   margin: 30px auto;
   max-width: 800px;
 }
-body .cabecera {
+
+.cabecera {
   background-color: #f0d5bc;
   padding: 10px;
   display: flex;
@@ -21,17 +22,17 @@ body .cabecera {
   align-items: center;
   text-align: center;
 }
-body .cabecera .carousel-item {
+.cabecera .carousel-item {
   height: 400px;
   background-color: #f0d5bc;
   color: #000;
   text-align: center;
 }
-body .cabecera .carousel-item img {
+.cabecera .carousel-item img {
   max-width: 100%;
   max-height: 100%;
 }
-body .cabecera .carousel-indicators li {
+.cabecera .carousel-indicators li {
   border-radius: 50%;
   border: none;
   width: 10px;
@@ -40,11 +41,11 @@ body .cabecera .carousel-indicators li {
   background-color: #ccc;
   transition: background-color 0.3s ease-in-out;
 }
-body .cabecera .carousel-indicators li.active {
+.cabecera .carousel-indicators li.active {
   background-color: #ccc;
 }
-body .cabecera .carousel-control-prev,
-body .cabecera .carousel-control-next {
+.cabecera .carousel-control-prev,
+.cabecera .carousel-control-next {
   width: 50px;
   height: 50px;
   font-size: 2rem;
@@ -62,21 +63,21 @@ body .cabecera .carousel-control-next {
   transform: translateY(-50%);
   z-index: 1;
 }
-body .cabecera .carousel-control-prev:hover,
-body .cabecera .carousel-control-next:hover {
+.cabecera .carousel-control-prev:hover,
+.cabecera .carousel-control-next:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: #fff;
 }
-body .cabecera .carousel-control-prev:hover .fa-chevron-left,
-body .cabecera .carousel-control-prev:hover .fa-chevron-right,
-body .cabecera .carousel-control-next:hover .fa-chevron-left,
-body .cabecera .carousel-control-next:hover .fa-chevron-right {
+.cabecera .carousel-control-prev:hover .fa-chevron-left,
+.cabecera .carousel-control-prev:hover .fa-chevron-right,
+.cabecera .carousel-control-next:hover .fa-chevron-left,
+.cabecera .carousel-control-next:hover .fa-chevron-right {
   animation: bounce 0.5s ease;
 }
-body .cabecera .carousel-control-prev {
+.cabecera .carousel-control-prev {
   left: 20px;
 }
-body .cabecera .carousel-control-next {
+.cabecera .carousel-control-next {
   right: 20px;
 }
 @keyframes bounce {
@@ -96,7 +97,7 @@ body .cabecera .carousel-control-next {
     transform: translateX(0);
   }
 }
-body .cabecera .contenedorElemNav {
+.cabecera .contenedorElemNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,67 +105,68 @@ body .cabecera .contenedorElemNav {
   width: 100%;
   margin: 0 auto;
 }
-body .cabecera .contenedorElemNav .contenedorLogo img {
+.cabecera .contenedorElemNav .contenedorLogo img {
   max-height: 60px;
 }
-body .cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader {
+.cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader {
   text-align: center;
   padding: 20px 0;
 }
-body .cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader .tituloHeader {
+.cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader .tituloHeader {
   font-size: 36px;
   margin-bottom: 10px;
 }
-body .cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader .imagenHeader {
+.cabecera .contenedorElemNav .contenedorLogo img .contenerdorElemHeader .imagenHeader {
   text-align: center;
   margin-top: 20px;
   max-width: 100%;
   height: auto;
 }
-body .cabecera .contenedorElemNav .navegacion {
+.cabecera .contenedorElemNav .navegacion {
   background-color: #D97F2D;
   margin-top: 1rem;
   border-radius: 10px;
 }
-body .cabecera .contenedorElemNav .navegacion .nav-item + body .cabecera .contenedorElemNav .navegacion .nav-item {
+.cabecera .contenedorElemNav .navegacion .nav-item + .cabecera .contenedorElemNav .navegacion .nav-item {
   margin-left: 1rem;
 }
-body .cabecera .contenedorElemNav .navegacion .nav-item .nav-link {
+.cabecera .contenedorElemNav .navegacion .nav-item .nav-link {
   color: #333;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
 }
-body .cabecera .contenedorElemNav .navegacion .nav-item .nav-link:hover {
+.cabecera .contenedorElemNav .navegacion .nav-item .nav-link:hover {
   color: #fff;
   background-color: #D97F2D;
   transition: #D97F2D 0.3s ease-in-out;
 }
-body .cabecera .contenedorElemNav .navegacion .nav-item .nav-link.active {
+.cabecera .contenedorElemNav .navegacion .nav-item .nav-link.active {
   color: #D97F2D;
 }
-body .cabecera .contenedorElemNav .navegacion .navbar-toggler {
+.cabecera .contenedorElemNav .navegacion .navbar-toggler {
   border-color: #D97F2D;
 }
-body .cabecera .contenedorElemNav .navegacion .navbar-toggler:hover {
+.cabecera .contenedorElemNav .navegacion .navbar-toggler:hover {
   background-color: #D97F2D;
   border-color: #D97F2D;
 }
-body .cabecera .contenedorElemNav .navegacion .navbar-toggler:focus {
+.cabecera .contenedorElemNav .navegacion .navbar-toggler:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 75, 43, 0.5);
 }
-body .cabecera .welcome__quote {
+.cabecera .welcome__quote {
   font-style: italic;
   font-size: 18px;
   margin-top: 20px;
 }
-body .cabecera .welcome__quote .welcome__name {
+.cabecera .welcome__quote .welcome__name {
   display: block;
   margin-top: 10px;
   font-style: normal;
   font-weight: bold;
 }
-body .blureado {
+
+.blureado {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 0;
@@ -173,7 +175,8 @@ body .blureado {
   text-align: justify;
   font-size: 20px;
 }
-body main {
+
+main {
   max-width: 800px;
   text-align: center;
   margin: auto;
@@ -182,40 +185,40 @@ body main {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-body main h1 {
+main h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.5rem;
   color: #333;
 }
-body main .location {
+main .location {
   margin-bottom: 50px;
   border-bottom: 1px solid #000;
   padding-bottom: 30px;
 }
-body main .location h2 {
+main .location h2 {
   font-size: 1.8rem;
   color: #000;
   margin-bottom: 10px;
 }
-body main .location p {
+main .location p {
   font-size: 1.2rem;
   color: #000;
   margin-bottom: 5px;
 }
-body main .location {
+main .location {
   transition: transform 0.2s ease-in-out;
 }
-body main .location:hover {
+main .location:hover {
   transform: scale(1.15);
 }
-body main .logo {
+main .logo {
   transition: opacity 0.3s ease-in-out;
 }
-body main .logo:hover {
+main .logo:hover {
   opacity: 0.8;
 }
-body main .container {
+main .container {
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -223,60 +226,60 @@ body main .container {
   align-items: center;
   margin-bottom: 40px;
 }
-body main .container .title {
+main .container .title {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 50px;
 }
-body main .container .history {
+main .container .history {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-body main .container .history .column {
+main .container .history .column {
   flex-basis: 45%;
   margin-bottom: 50px;
 }
-body main .titulo {
+main .titulo {
   text-align: center;
   margin-bottom: 30px;
   font-size: 30px;
 }
-body main .aplicar {
+main .aplicar {
   display: flex;
   justify-content: center;
 }
-body main .aplicar .apicar_initContainer {
+main .aplicar .apicar_initContainer {
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
 }
-body main .aplicar .apicar_initContainer .apli__content {
+main .aplicar .apicar_initContainer .apli__content {
   text-align: center;
   margin-bottom: 30px;
 }
-body main .aplicar .apicar_initContainer .apli__formField {
+main .aplicar .apicar_initContainer .apli__formField {
   margin-bottom: 20px;
 }
-body main .aplicar .apicar_initContainer .apli__formField label {
+main .aplicar .apicar_initContainer .apli__formField label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-body main .aplicar .apicar_initContainer .apli__formField select,
-body main .aplicar .apicar_initContainer .apli__formField input {
+main .aplicar .apicar_initContainer .apli__formField select,
+main .aplicar .apicar_initContainer .apli__formField input {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-body main .aplicar .apicar_initContainer .apli__formField input:focus,
-body main .aplicar .apicar_initContainer .apli__formField select:focus {
+main .aplicar .apicar_initContainer .apli__formField input:focus,
+main .aplicar .apicar_initContainer .apli__formField select:focus {
   outline: none;
   border-color: #D97F2D;
 }
-body main .aplicar .apicar_initContainer .apli__formField input[type=submit] {
+main .aplicar .apicar_initContainer .apli__formField input[type=submit] {
   background-color: #D97F2D;
   color: #fff;
   border: none;
@@ -284,7 +287,7 @@ body main .aplicar .apicar_initContainer .apli__formField input[type=submit] {
   border-radius: 5px;
   cursor: pointer;
 }
-body main .aplicar .apli_successContainer {
+main .aplicar .apli_successContainer {
   display: none;
   text-align: center;
   background-color: #fff;
@@ -293,24 +296,25 @@ body main .aplicar .apli_successContainer {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   width: 50%;
 }
-body main .aplicar .apli_successContainer .apli_titulo {
+main .aplicar .apli_successContainer .apli_titulo {
   margin-bottom: 30px;
   font-size: 24px;
 }
-body main .aplicar .apli_successContainer .apli__contenido {
+main .aplicar .apli_successContainer .apli__contenido {
   margin-bottom: 30px;
 }
-body .seccionMenu {
+
+.seccionMenu {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-body .seccionMenu h2 {
+.seccionMenu h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
-body .seccionMenu .listaMenu {
+.seccionMenu .listaMenu {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -318,10 +322,10 @@ body .seccionMenu .listaMenu {
   flex-wrap: wrap;
   justify-content: center;
 }
-body .seccionMenu .listaMenu li {
+.seccionMenu .listaMenu li {
   margin: 20px;
 }
-body .seccionMenu .listaMenu li .menu {
+.seccionMenu .listaMenu li .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -329,28 +333,29 @@ body .seccionMenu .listaMenu li .menu {
   width: 200px;
   height: 300px;
 }
-body .seccionMenu .listaMenu li .menu img {
+.seccionMenu .listaMenu li .menu img {
   width: 200px;
   height: 200px;
 }
-body .seccionMenu .listaMenu li .menu h3 {
+.seccionMenu .listaMenu li .menu h3 {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
-body .seccionMenu .listaMenu li .menu .precio {
+.seccionMenu .listaMenu li .menu .precio {
   font-weight: bold;
   font-size: 1.2rem;
   color: #000;
   margin-top: 0.5rem;
 }
-body .seccionCards {
+
+.seccionCards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-body .seccionCards .card {
+.seccionCards .card {
   width: 200px;
   height: 250px;
   margin: 20px;
@@ -361,22 +366,22 @@ body .seccionCards .card {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
-body .seccionCards .card:hover {
+.seccionCards .card:hover {
   transform: translateY(-10px);
 }
-body .seccionCards .card:hover img {
+.seccionCards .card:hover img {
   transform: scale(2.2);
 }
-body .seccionCards .card:hover h3 {
+.seccionCards .card:hover h3 {
   transform: translateY(0);
 }
-body .seccionCards .card img {
+.seccionCards .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
-body .seccionCards .card h3 {
+.seccionCards .card h3 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -390,59 +395,63 @@ body .seccionCards .card h3 {
   transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
 }
-body .seccionVideo {
+
+.seccionVideo {
   margin-top: 50px;
   text-align: center;
   background-color: #2d2d2d;
   color: #fff;
   padding: 2rem;
 }
-body .seccionVideo h2 {
+
+.seccionVideo h2 {
   font-size: 3rem;
   margin-bottom: 30px;
 }
-body .seccionVideo video {
+
+.seccionVideo video {
   width: 60%;
   max-width: 800px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 768px) {
-  body .seccionVideo h2 {
+  .seccionVideo h2 {
     font-size: 2rem;
   }
-  body .seccionVideo video {
+  .seccionVideo video {
     width: 100%;
   }
 }
-body .piePagina {
+.piePagina {
   background-color: #f0d5bc;
   padding: 10px;
   text-align: center;
 }
-body .piePagina .fixedInsta,
-body .piePagina .fixedFace,
-body .piePagina .fixedTwit {
+.piePagina .fixedInsta,
+.piePagina .fixedFace,
+.piePagina .fixedTwit {
   font-size: 24px;
   margin: 10px;
 }
-body .piePagina .fixedInsta .fa-brands,
-body .piePagina .fixedFace .fa-brands,
-body .piePagina .fixedTwit .fa-brands {
+.piePagina .fixedInsta .fa-brands,
+.piePagina .fixedFace .fa-brands,
+.piePagina .fixedTwit .fa-brands {
   color: #000;
 }
-body .piePagina .fixedInsta .fa-instagram:hover,
-body .piePagina .fixedFace .fa-instagram:hover,
-body .piePagina .fixedTwit .fa-instagram:hover {
+.piePagina .fixedInsta .fa-instagram:hover,
+.piePagina .fixedFace .fa-instagram:hover,
+.piePagina .fixedTwit .fa-instagram:hover {
   color: #E1306C;
 }
-body .piePagina .fixedInsta .fa-facebook:hover,
-body .piePagina .fixedFace .fa-facebook:hover,
-body .piePagina .fixedTwit .fa-facebook:hover {
+.piePagina .fixedInsta .fa-facebook:hover,
+.piePagina .fixedFace .fa-facebook:hover,
+.piePagina .fixedTwit .fa-facebook:hover {
   color: #4267B2;
 }
-body .piePagina .fixedInsta .fa-twitter:hover,
-body .piePagina .fixedFace .fa-twitter:hover,
-body .piePagina .fixedTwit .fa-twitter:hover {
+.piePagina .fixedInsta .fa-twitter:hover,
+.piePagina .fixedFace .fa-twitter:hover,
+.piePagina .fixedTwit .fa-twitter:hover {
   color: #1DA1F2;
 }
 
