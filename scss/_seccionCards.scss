@@ -73,15 +73,6 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-    .seccionVideo h2 {
-        font-size: 2rem;
-    }
-
-    .seccionVideo video {
-        width: 100%;
-    }
-}
 
 .piePagina {
     background-color: $secondary-color;

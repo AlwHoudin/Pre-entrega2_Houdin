@@ -1,0 +1,66 @@
+@media screen and (max-width: 767px) {
+    /* Estilos para pantallas pequeñas */
+    .contenedorElemNav {
+        text-align: center;
+    }
+    .navegacion {
+        margin-top: 30px;
+    }
+    .tituloHeader {
+        font-size: 30px;
+    }
+    .welcome__quote {
+        font-size: 18px;
+    }
+    .seccionVideo h2 {
+        font-size: 2rem;
+    }
+
+    .seccionVideo video {
+        width: 100%;
+    }
+
+    .container-sm img {
+        content: url("../assets/img/Gustavo\ con\ los\ managers\ \(75%\ mas\ chico\).png");
+     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para pantallas medianas */
+    .tituloHeader {
+        font-size: 30px;
+    }
+    .welcome__quote {
+        font-size: 24px;
+    }
+    .seccionCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+        width: 30%;
+    }
+  
+    .container-sm img {
+        content: url("../assets/img/Gustavo\ con\ los\ managers\ \(75%\ mas\ chico\).png");
+     }
+}
+
+@media screen and (min-width: 1185px) {
+    /* Estilos para pantallas grandes */
+    .tituloHeader {
+        font-size: 50px;
+    }
+    .welcome__quote {
+        font-size: 32px;
+    }
+    .seccionCards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card {
+        width: 22%;
+    }
+}
+
