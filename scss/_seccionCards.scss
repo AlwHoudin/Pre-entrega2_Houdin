@@ -72,34 +72,3 @@
     max-width: 800px;
     margin: 0 auto;
 }
-
-
-.piePagina {
-    background-color: $secondary-color;
-    padding: 10px;
-    text-align: center;
-
-    .fixedInsta,
-    .fixedFace,
-    .fixedTwit {
-        font-size: 24px;
-        margin: 10px;
-
-        .fa-brands {
-            color: $black-color;
-        }
-
-        .fa-instagram:hover {
-            color: #E1306C;
-        }
-
-        .fa-facebook:hover {
-            color: #4267B2;
-        }
-
-        .fa-twitter:hover {
-            color: #1DA1F2;
-        }
-    }
-
-}

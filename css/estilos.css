@@ -242,6 +242,40 @@ main .container .history .column {
   flex-basis: 45%;
   margin-bottom: 50px;
 }
+main .container h1 {
+  color: #fff;
+  animation: shake 2.5s ease-in-out infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 80% {
+    transform: translateX(10px);
+  }
+  30%, 50%, 70% {
+    transform: translateY(-10px);
+  }
+  40%, 60% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+main h2 {
+  color: #fff;
+}
+main p {
+  color: #fff;
+}
+main .btn {
+  color: #fff;
+  background-color: #D97F2D;
+}
 main .titulo {
   text-align: center;
   margin-bottom: 30px;
