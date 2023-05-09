@@ -1,0 +1,74 @@
+
+.seccionCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+        width: 200px;
+        height: 250px;
+        margin: 20px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        &:hover img {
+            transform: scale(2.2);
+        }
+
+        &:hover h3 {
+            transform: translateY(0);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            background-color: #D97F2D;
+            color: $white-color;
+            font-size: 1.2rem;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+    }
+}
+
+.seccionVideo {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #2d2d2d;
+    color: $white-color;
+    padding: 2rem;
+}
+
+.seccionVideo h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.seccionVideo video {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+}
