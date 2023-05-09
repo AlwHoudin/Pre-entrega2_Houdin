@@ -1,25 +1,24 @@
-@media screen and (max-width: 767px) {
-    /* Estilos para pantallas pequeñas */
-    .contenedorElemNav {
-        text-align: center;
-    }
-    .navegacion {
-        margin-top: 30px;
-    }
-    .tituloHeader {
-        font-size: 30px;
-    }
-    .welcome__quote {
-        font-size: 18px;
-    }
-    .seccionVideo h2 {
-        font-size: 2rem;
+@media (max-width: 668px) {
+    .history {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
     }
 
-    .seccionVideo video {
+    .column {
+        margin: 0;
+    }
+
+    .col-15 {
+        margin-bottom: 20px;
+    }
+
+    img {
         width: 100%;
     }
 }
+    
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /* Estilos para pantallas medianas */

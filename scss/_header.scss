@@ -215,7 +215,7 @@
             text-align: center;
             margin-bottom: 30px;
             font-size: 2.5rem;
-            color: #333;
+            color: $black-color;
         }
 
         .location {
@@ -266,6 +266,7 @@
                 font-size: 3rem;
                 text-align: center;
                 margin-bottom: 50px;
+                color: $black-color;
             }
 
             .history {
@@ -280,8 +281,10 @@
                 }
 
             }
-            h1 {
-                color: $white-color;
+            
+            span {
+                font-size: 50px;
+                column-rule: $black-color;
                 animation: shake 2.5s ease-in-out infinite; 
               }
             }
@@ -305,12 +308,6 @@
               100% {
                 transform: translateX(0);
               }
-            }
-            h2{
-                color: $white-color;
-            }
-            p{
-                color: $white-color;
             }
             .btn{
                 color: $white-color;
@@ -407,6 +404,7 @@
             font-size: 2rem;
             font-weight: bold;
             margin-bottom: 30px;
+            color: $black-color;
         }
 
         .listaMenu {

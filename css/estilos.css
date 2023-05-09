@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -190,7 +189,7 @@ main h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2.5rem;
-  color: #333;
+  color: #000;
 }
 main .location {
   margin-bottom: 50px;
@@ -231,6 +230,7 @@ main .container .title {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 50px;
+  color: #000;
 }
 main .container .history {
   display: flex;
@@ -242,8 +242,9 @@ main .container .history .column {
   flex-basis: 45%;
   margin-bottom: 50px;
 }
-main .container h1 {
-  color: #fff;
+main .container span {
+  font-size: 50px;
+  column-rule: #000;
   animation: shake 2.5s ease-in-out infinite;
 }
 @keyframes shake {
@@ -265,12 +266,6 @@ main .container h1 {
   100% {
     transform: translateX(0);
   }
-}
-main h2 {
-  color: #fff;
-}
-main p {
-  color: #fff;
 }
 main .btn {
   color: #fff;
@@ -348,6 +343,7 @@ main .aplicar .apli_successContainer .apli__contenido {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
+  color: #000;
 }
 .seccionMenu .listaMenu {
   list-style: none;
@@ -482,24 +478,20 @@ main .aplicar .apli_successContainer .apli__contenido {
   color: #1DA1F2;
 }
 
-@media screen and (max-width: 767px) {
-  /* Estilos para pantallas pequeñas */
-  .contenedorElemNav {
-    text-align: center;
+@media (max-width: 668px) {
+  .history {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
   }
-  .navegacion {
-    margin-top: 30px;
+  .column {
+    margin: 0;
   }
-  .tituloHeader {
-    font-size: 30px;
+  .col-15 {
+    margin-bottom: 20px;
   }
-  .welcome__quote {
-    font-size: 18px;
-  }
-  .seccionVideo h2 {
-    font-size: 2rem;
-  }
-  .seccionVideo video {
+  img {
     width: 100%;
   }
 }
